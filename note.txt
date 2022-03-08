@@ -1,0 +1,2 @@
+npm i bootstrap react-router-dom axios        //to install dependencies for the app.
+
