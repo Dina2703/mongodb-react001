@@ -1,2 +1,8 @@
 npm i bootstrap react-router-dom axios        //to install dependencies for the app.
 
+------setting backend---------
+touch server.js
+mkdir routes models 
+npm init
+npm i express mongoose cors 
+nodemon server.js    // to run server
