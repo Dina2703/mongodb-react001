@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function CreateNote() {
+export default function CreateNote() {
   const [input, setInput] = useState({
     title: "",
     content: "",
@@ -18,9 +18,7 @@ function CreateNote() {
 
   const handleClick = (e) => {
     e.preventDefault();
-    console.log(input);
   };
-
   return (
     <div className="container">
       <h3>Create a Note</h3>
@@ -54,5 +52,3 @@ function CreateNote() {
     </div>
   );
 }
-
-export default CreateNote;
