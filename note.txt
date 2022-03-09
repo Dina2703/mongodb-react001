@@ -1,2 +1,32 @@
 npm i bootstrap react-router-dom axios        //to install dependencies for the app.
 
+------setting backend---------
+touch server.js
+mkdir routes models 
+npm init
+npm i express mongoose cors 
+nodemon server.js    // to run server
+
+--------configure server.js page----------
+const express = require("express");
+const app = express();
+const cors = require("cors");
+const { default: mongoose } = require("mongoose");
+// const mongoose = require("mongoose");
+
+app.use(cors());
+app.use(express.json()); //to parse the request coming from the frontend
+
+//connect to mongoose
+
+//require route
+
+app.listen(4000, function () {
+  console.log("express server is running");
+});
+
+---------add 'proxy' into package.json--------------
+ "proxy": "http://localhost:4000",
+
+-----------MongoDB-Atlas-------------
+watch video Pass data between reactUI and MongoDB by Marina Kim
