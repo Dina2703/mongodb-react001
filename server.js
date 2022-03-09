@@ -13,7 +13,8 @@ mongoose.connect(
 );
 
 //require route
+app.use("/", require("./routes/noteRoute"));
 
-app.listen(4000, function () {
+app.listen(8000, function () {
   console.log("express server is running");
 });
