@@ -1,2 +1,9 @@
-npm i bootstrap react-router-dom axios        //to install dependencies for the app.
+npm i bootstrap react-router-dom axios        //to install dependencies for frontend part, inside react app.
 
+----------backend foulder setting------
+npm init    // initialize the npm inside the backend foulder.
+npm i express mongoose cors   //install inside the backend foulder.
+
+code to run the app: 
+nodemon server.js
+npm start 
